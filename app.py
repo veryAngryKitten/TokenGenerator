@@ -7,7 +7,7 @@ bindigits = [0,1]
 
 print("TokenGenerator")
 
-tokenGenChoose = input("HEX, bin, custom?(h/b,c)").lower()
+tokenGenChoose = input("HEX, bin, custom?(h/b/c)").lower()
 length = int(input("Length: "))
 
 def TokenGen(type, len):
