@@ -13,21 +13,21 @@ length = int(input("Length: "))
 def TokenGen(type, len):
     token = []
 
-    if type.lower == "h":
+    if type.lower() == "h":
         for i in range(0, length):
             token.append(random.choice(hexdigits))
             
         for char in token:
             print(char, end="")
 
-    if type.lower == "c":
+    if type.lower() == "b":
         for i in range(0, length):
             token.append(random.choice(bindigits))
             
         for char in token:
             print(char, end="")
 
-    if type.lower == "c":
+    if type.lower() == "c":
         for i in range(0, length):
             token.append(random.choice(characters))
             
